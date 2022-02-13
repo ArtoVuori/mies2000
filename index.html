@@ -1,0 +1,49 @@
+<html>
+<body>
+<head>
+<style>
+
+.button {
+  border: none;
+  color: white;
+  padding: 30px 60px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 200px;
+  margin: 1px 1px;
+  cursor: pointer;
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+.button3 {background-color: #cd6ae8;} /* Milk */
+
+
+</style>
+<body style="background-color:black;">
+</head>
+
+<form action="https://prod-130.westeurope.logic.azure.com:443/workflows/001ecf109f404b05ab4591c6fa5eec08/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qyiUHEVDkJDpC8Eh-F7gBjuNYVLXZGYKoBfrrxsQirQ" method="POST" onsubmit="return false">
+
+  <div>
+    <input type="hidden" input name="bedtime" id="bedtime" value="bedtime" onsubmit="return false">
+	<button class="button button1">Nukkumaan</button>
+  </div>
+</form>
+
+<form action="https://prod-130.westeurope.logic.azure.com:443/workflows/001ecf109f404b05ab4591c6fa5eec08/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qyiUHEVDkJDpC8Eh-F7gBjuNYVLXZGYKoBfrrxsQirQ" method="POST" onsubmit="return false">
+  <div>
+    <input type="hidden" input name="wakeuptime" id="wakeuptime" value="wakeuptime">
+	<button class="button button2">Herätys</button>
+  </div>
+</form>
+<form action="https://prod-130.westeurope.logic.azure.com:443/workflows/001ecf109f404b05ab4591c6fa5eec08/triggers/manual/paths/invoke?api-version=2016-06-01&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=qyiUHEVDkJDpC8Eh-F7gBjuNYVLXZGYKoBfrrxsQirQ" method="POST" onsubmit="return false">
+  <div>
+    <input type="hidden" input name="eat" id="eat" value="eat">
+	<button class="button button3">Syömään</button>
+  </div>
+</form>
+
+</body>
+</html>
